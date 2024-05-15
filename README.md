@@ -1,39 +1,36 @@
-# Model Implementation
+# Deep Learning Model Optimization for Image Classification Using Collaborative Optimization Techniques 
 
+## Description
 
-## Project Overview
+This repository showcases a comprehensive approach to model optimization using sparsity, sparsity-preserving clustering, and quantization-aware training (PCQAT) utlizing TensorFlow Model Optimization Toolkit (TFMOT). It provides a step-by-step guide and code implementation to:
 
-In this project, we implemented transfer learning using five different base models to train our custom dataset. The goal was to leverage the pre-trained features of well-known models and adapt them to our specific domain. Subsequently, we applied a weighted averaging ensemble method to improve the overall model accuracy by combining the strengths of individual models.
+- Train a MobileNet V2 model for your custom animal camera trap dataset.
+- Prune the trained model and evaluate its accuracy and sparsity preservation.
+- Apply sparsity-preserving clustering to maintain sparsity.
+- Implement PCQAT for combined sparsity and cluster preservation with quantization.
+- Generate a TFLite model for deployment and compare its size reduction.
+- Analyze the trade-offs between model size/inference latency and accuracy throughout the optimization process.
 
-## Transfer Learning Base Models
+## Key Features
 
-1. **MobileNetV2**
+- **Practical Example**: Illustrates the entire model optimization journey on a real-world dataset.
+- **Step-by-Step Guide**: Clear instructions for each optimization stage.
+- **Code Implementation**: Provides ready-to-run code for replication.
+- **Comparative Analysis**: Evaluates model size reduction and accuracy impact.
 
-2. **ResNet50**
+## Target Audience
 
-3. **DenseNet121**
+- Machine learning practitioners seeking to optimize their models for deployment.
+- TensorFlow users interested in leveraging TFMOT for efficient model training and inference.
 
-4. **EfficientNetV2B0**
+## Installation
 
-5. **NASNetMobile**
+1. Set up a virtual environment (recommended).
+2. Install required dependencies using pip:
 
-## Weighted Averaging Ensemble Model
+```bash
+pip install -q tensorflow-model-optimization
 
-After training the individual models, we implemented a weighted averaging ensemble model to combine their predictions effectively. The weights assigned to each model were fine-tuned based on their individual performance and contribution to the overall accuracy.
-
-
-This ensemble approach allowed us to achieve a significant improvement in accuracy compared to individual models, showcasing the effectiveness of combining diverse transfer learning models for enhanced performance.
-
-Feel free to explore the project code and experiment with different model combinations to tailor the solution to your specific requirements.
-
-## How to Replicate
-
-To replicate our results or further experiment with the models, follow these steps:
-
-1. Clone the repository.
-2. Download the necessary datasets and preprocess them.
-3. Train the individual transfer learning models using the provided scripts.
-4. Fine-tune the weights for the ensemble model.
-5. Evaluate the ensemble model on your test dataset.
+![Compression Pipeline](https://github.com/FYP-19/Model/assets/73242822/cdcafe13-effd-43b2-ba19-ec4d5fff3b0f)
 
 
