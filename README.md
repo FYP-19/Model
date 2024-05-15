@@ -1,6 +1,7 @@
 # Deep Learning Model Optimization for Image Classification Using Collaborative Optimization Techniques 
 
 ## Description
+![Compression Pipeline](https://github.com/FYP-19/Model/assets/73242822/d7cedec5-d372-487d-82b9-e9d09a2c9230)
 
 This repository showcases a comprehensive approach to model optimization using sparsity, sparsity-preserving clustering, and quantization-aware training (PCQAT) utlizing TensorFlow Model Optimization Toolkit (TFMOT). It provides a step-by-step guide and code implementation to:
 
@@ -31,6 +32,5 @@ This repository showcases a comprehensive approach to model optimization using s
 ```bash
 pip install -q tensorflow-model-optimization
 
-![Compression Pipeline](https://github.com/FYP-19/Model/assets/73242822/cdcafe13-effd-43b2-ba19-ec4d5fff3b0f)
 
 
